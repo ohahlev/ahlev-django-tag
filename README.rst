@@ -2,4 +2,5 @@
 ahlev-django-tags
 =======================
 
-Tags App using Django Framework
+https://test.pypi.org/project/ahlev-django-tags
+

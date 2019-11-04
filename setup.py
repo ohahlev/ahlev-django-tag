@@ -8,6 +8,8 @@ setup(
     name='ahlev-django-tags',
     version=tags.__version__,
     description='tags app using django framework',
+    long_description='tags app using django framework',
+    long_description_content_type='text/x-rst',
     author='ahlev',
     author_email='ohahlev@gmail.com',
     include_package_data=True,

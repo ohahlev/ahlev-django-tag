@@ -1,5 +1,5 @@
 .vscode/
 dist/
-ahlev_django_tags.egg-info/
-tags/migrations/
+*.egg-info/
+*/migrations/
 *.pyc
