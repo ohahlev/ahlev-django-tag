@@ -1,0 +1,13 @@
+
+{% extends 'css_js/base.html' %}
+{% block main_content %}
+<div class="container my-5 z-depth-1">
+    <!--Section: Content-->
+    <section class="dark-grey-text">
+      <div class="row pr-lg-5">
+          {% include 'tag/partials/tag.html' with tag=tag %}</h3>
+      </div>
+    </section>
+    <!--Section: Content-->
+</div>
+{% endblock %}
