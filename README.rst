@@ -1,6 +1,6 @@
 =======================
-ahlev-django-tags
+ahlev-django-tag
 =======================
 
-https://test.pypi.org/project/ahlev-django-tags
+https://test.pypi.org/project/ahlev-django-tag
 

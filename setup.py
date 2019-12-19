@@ -1,20 +1,21 @@
 # -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
-
-import tags
-
+import tag
 
 setup(
-    name='ahlev-django-tags',
-    version=tags.__version__,
-    description='tags app using django framework',
-    long_description='tags app using django framework',
+    name='ahlev-django-tag',
+    version=tag.__version__,
+    description='tag app using django framework',
+    long_description='tag app using django framework',
     long_description_content_type='text/x-rst',
     author='ahlev',
     author_email='ohahlev@gmail.com',
     include_package_data=True,
-    url='https://github.com/ohahlev/ahlev-django-tags/tree/%s' % tags.__version__,
+    url='https://github.com/ohahlev/ahlev-django-tag/tree/%s' % tag.__version__,
     packages=find_packages(),
+    install_requires=[
+        'django-tinymce',
+    ],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Web Environment',

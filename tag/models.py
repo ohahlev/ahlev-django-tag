@@ -1,6 +1,6 @@
 from django.db import models
-from django.utils.text import Truncator
 from django.utils.html import format_html
+from tinymce.models import HTMLField
 
 class Tag(models.Model):
     TAG_TYPES = (
@@ -18,7 +18,7 @@ class Tag(models.Model):
     type = models.CharField(max_length=32, choices=TAG_TYPES, help_text='''
         <font size='5em'><span class="badge badge-pill badge-default" style="margin-left: -10px">Default</span></font>
     ''')
-    detail = models.TextField(max_length=1025)
+    detail = HTMLField()
     date_created = models.DateTimeField(auto_now_add=True)
     last_updated = models.DateTimeField(auto_now=True)
 
@@ -34,8 +34,14 @@ class Tag(models.Model):
     short_detail.admin_order_field = 'detail'
     short_detail.short_description = 'detail'
 
-    def preview(self):
+    def preview_type(self):
         return format_html('<span class="badge badge-pill %s">%s</span>' % (self.type, self.name))
     
-    preview.admin_order_field = 'type'
-    preview.short_description = 'preview'
+    preview_type.admin_order_field = 'type'
+    preview_type.short_description = 'preview type'
+
+    def preview_detail(self):
+        return format_html(self.detail);
+    
+    preview_detail.admin_order_field = 'detail'
+    preview_detail.short_description = 'preview detail'

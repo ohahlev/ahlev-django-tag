@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
-class TagsConfig(AppConfig):
-    name = 'tags'
+class TagConfig(AppConfig):
+    name = 'tag'
     verbose_name = 'Tag Management'

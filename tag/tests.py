@@ -1,6 +1,6 @@
 from django.test import TestCase
 
-class TagsTests(TestCase):
+class TagTests(TestCase):
 
     def test_dummy_fail(self):
         self.assertEqual(True, False)

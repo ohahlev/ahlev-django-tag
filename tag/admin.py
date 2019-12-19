@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import Tag
 
 class TagAdmin(admin.ModelAdmin):
-    list_display = ['name', 'date_created', 'last_updated', 'preview', 'type', 'short_detail']
+    list_display = ['name', 'date_created', 'last_updated', 'preview_type', 'type', 'preview_detail']
     search_fields = ['name', 'detail']
     class Media:
         css = {
