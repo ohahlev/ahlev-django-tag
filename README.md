@@ -55,14 +55,14 @@ MEDIA_URL = '/medias/'
 ```
 
 ## screenshots
-### frontend: about us page
+### frontend: partial tag
 ![](screenshot/tag_frontend.png)
 
 ### backend: home page
 ![](screenshot/tag_backend1.png)
 
-### backend: list about us
+### backend: list all tags
 ![](screenshot/tag_backend2.png)
 
-### backend: edit about us
+### backend: edit a tag
 ![](screenshot/tag_backend3.png)
