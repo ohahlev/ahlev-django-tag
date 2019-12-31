@@ -1,5 +1,5 @@
 # DJANGO TAG APPLICATION
-![pypi](https://img.shields.io/pypi/v/ahlev-django-about-us) ![pypi](https://img.shields.io/pypi/status/ahlev-django-about-us)
+![pypi](https://img.shields.io/pypi/v/ahlev-django-tag) ![pypi](https://img.shields.io/pypi/status/ahlev-django-tag)
 
 This django application is used to create tag.
 
