@@ -56,7 +56,7 @@ MEDIA_URL = '/medias/'
 ### frontend: partial tag
 ![](screenshot/tag_frontend.png)
 
-### backend: home page
+### backend: tag management
 ![](screenshot/tag_backend1.png)
 
 ### backend: list all tags
